@@ -23,5 +23,4 @@ public class ApplicationClient {
     public static void main(String[] args) {
         new SpringApplicationBuilder(ApplicationClient.class).web(true).run(args);
     }
-
 }
