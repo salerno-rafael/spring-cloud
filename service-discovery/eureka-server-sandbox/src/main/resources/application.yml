@@ -1,5 +1,16 @@
+#Server Specifics
 server:
   port: 8761
+
+error:
+    whitelabel:
+      enabled: false
+
+spring:
+  application:
+    name: eureka-server
+
+#Eureka Specifics
 
 eureka:
   instance:
