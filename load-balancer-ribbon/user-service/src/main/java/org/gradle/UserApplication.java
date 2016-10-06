@@ -26,7 +26,7 @@ public class UserApplication {
 	RestTemplate restTemplate;
 
 	@RequestMapping("/hi")
-	public String hi(@RequestParam(value = "name", defaultValue = "Artaban") String name) {
+	public String hi(@RequestParam(value = "name", defaultValue = "Rafael") String name) {
 		String greeting = this.restTemplate.getForObject("http://hello-service/greeting", String.class);
 		return String.format("%s, %s!", greeting, name);
 	}
