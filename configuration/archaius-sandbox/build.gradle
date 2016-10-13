@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-archaius', version: '1.2.0.RELEASE'
+ compile group: 'com.netflix.archaius', name: 'archaius-core', version: '0.7.5'
 }
 
 test {

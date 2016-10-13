@@ -13,13 +13,11 @@ import com.netflix.config.sources.URLConfigurationSource;
 
 public class ArchaiusSandBox {
 	
-	
 	static {
 		System.setProperty("archaius.configurationSource.defaultFileName", "archaius.properties");
 	}
 
 	public String configuration() throws IOException {
-		
 		installConfig();
 		ConfigurationManager.getDeploymentContext().setDeploymentEnvironment(System.getenv("environment"));
 		ConfigurationManager.loadCascadedPropertiesFromResources("archaius");
