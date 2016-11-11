@@ -1,3 +1,5 @@
+server:
+  port: 8484
 eureka:
   client:
     healthcheck:
